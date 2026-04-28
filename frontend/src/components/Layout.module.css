@@ -1,0 +1,17 @@
+.layout { display:flex; min-height:100vh; }
+.sidebar { width:240px; background:#0F172A; display:flex; flex-direction:column; position:fixed; height:100vh; overflow-y:auto; flex-shrink:0; }
+.brand { display:flex; align-items:center; gap:10px; padding:22px 20px; border-bottom:1px solid #1E293B; font-size:17px; font-weight:800; color:white; }
+.ai { color:#3B82F6; }
+.nav { padding:12px 0; flex:1; }
+.link { display:flex; align-items:center; gap:10px; padding:11px 20px; color:#94A3B8; font-weight:500; font-size:13.5px; transition:all 0.2s; text-decoration:none; }
+.link:hover { background:#1E293B; color:white; text-decoration:none; }
+.active { background:#1E293B !important; color:white !important; border-left:3px solid #3B82F6; }
+.footer { padding:14px 20px; border-top:1px solid #1E293B; }
+.user { display:flex; align-items:center; gap:10px; margin-bottom:10px; }
+.avatar { width:34px; height:34px; border-radius:50%; background:#3B82F6; color:white; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:14px; flex-shrink:0; }
+.name { color:white; font-size:13px; font-weight:600; }
+.role { color:#64748B; font-size:11px; text-transform:capitalize; }
+.logout { width:100%; padding:8px; background:transparent; border:1px solid #334155; border-radius:8px; color:#94A3B8; font-size:13px; cursor:pointer; transition:all 0.2s; font-family:var(--font); }
+.logout:hover { background:#1E293B; color:white; }
+.main { margin-left:240px; flex:1; padding:28px 32px; min-height:100vh; background:var(--surface); }
+@media(max-width:768px){ .sidebar{display:none} .main{margin-left:0;padding:16px} }
